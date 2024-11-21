@@ -9,13 +9,13 @@ public class FullTimeEmployee extends Employee
         super(firstName, lastName, socialNumber, contractType);
         this.salary = salary;
     }
-
+    //Override the income with this employee types salary
     @Override
     public double income()
     {
         return salary;
     }
-
+    //Override the salary output for this employee type
     public String toString()
     {
         return super.toString() + ", Salary: " + salary;

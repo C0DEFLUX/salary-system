@@ -7,6 +7,7 @@ public abstract class Employee
     private String socialNumber;
     private String contractType;
 
+    //Set the employee info
     public Employee(String firstName, String lastName, String socialNumber, String contractType)
     {
         this.firstName = firstName;
@@ -17,14 +18,15 @@ public abstract class Employee
 
     public abstract double income();
 
+    //Return the contract type
     public String getContractType()
     {
         return contractType;
     }
-
+    //Return the employee info
     @Override
     public String toString()
     {
-        return "EmployeeTypes.Employee: "+ firstName + " " + lastName + ", Social Number: " + socialNumber + ", Contract Type: " + contractType;
+        return "Employee: "+ firstName + " " + lastName + ", Social Number: " + socialNumber + ", Contract Type: " + contractType;
     }
 }
