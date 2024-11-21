@@ -17,6 +17,11 @@ public abstract class Employee
 
     public abstract double income();
 
+    public String getContractType()
+    {
+        return contractType;
+    }
+
     @Override
     public String toString()
     {
