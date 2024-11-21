@@ -1,3 +1,5 @@
+package EmployeeTypes;
+
 public abstract class Employee
 {
     private String firstName;
@@ -18,6 +20,6 @@ public abstract class Employee
     @Override
     public String toString()
     {
-        return "Employee: "+ firstName + " " + lastName + ", Social Number: " + socailNumber + ", Contract Type: " + contractType;
+        return "EmployeeTypes.Employee: "+ firstName + " " + lastName + ", Social Number: " + socailNumber + ", Contract Type: " + contractType;
     }
 }
