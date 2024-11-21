@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class Demo
 {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         Scanner scanner = new Scanner(System.in);
         Employee[] employees = new Employee[10];
         int employeeCount = 0;
@@ -21,10 +22,12 @@ public class Demo
             int choice = scanner.nextInt();
             scanner.nextLine();
 
-            switch (choice) {
+            switch (choice)
+            {
                 case 1:
                     //Register a new employee if Employee array is not full
-                    if (employeeCount < employees.length) {
+                    if (employeeCount < employees.length)
+                    {
                         employees[employeeCount++] = registerEmployee(scanner);
                     } else {
                         System.out.println("Employee list is full.");
@@ -73,7 +76,8 @@ public class Demo
         int type = scanner.nextInt();
         scanner.nextLine();
 
-        switch (type) {
+        switch (type)
+        {
             case 1:
                 System.out.print("Enter salary: ");
                 double salary = scanner.nextDouble();
@@ -107,7 +111,8 @@ public class Demo
     //Method to print out data of all employees.
     private static void printEmployeeData(Employee[] employees, int employeeCount)
     {
-        for (int i = 0; i < employeeCount; i++) {
+        for (int i = 0; i < employeeCount; i++)
+        {
             System.out.println(employees[i]);
             System.out.println("Income: " + employees[i].income());
         }
@@ -118,8 +123,10 @@ public class Demo
     {
         System.out.print("Enter position to filter by: ");
         String position = scanner.nextLine();
-        for (int i = 0; i < employeeCount; i++) {
-            if (employees[i].getClass().getSimpleName().equalsIgnoreCase(position)) {
+        for (int i = 0; i < employeeCount; i++)
+        {
+            if (employees[i].getClass().getSimpleName().equalsIgnoreCase(position))
+            {
                 System.out.println(employees[i]);
                 System.out.println("Income: " + employees[i].income());
             }
@@ -131,8 +138,10 @@ public class Demo
     {
         System.out.print("Enter contract type to filter by: ");
         String contractType = scanner.nextLine();
-        for (int i = 0; i < employeeCount; i++) {
-            if (employees[i].getContractType().equalsIgnoreCase(contractType)) {
+        for (int i = 0; i < employeeCount; i++)
+        {
+            if (employees[i].getContractType().equalsIgnoreCase(contractType))
+            {
                 System.out.println(employees[i]);
                 System.out.println("Income: " + employees[i].income());
             }
