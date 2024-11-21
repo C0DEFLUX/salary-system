@@ -6,10 +6,8 @@ public class FullTimeEmployee extends Employee
 
     public FullTimeEmployee(String firstName, String lastName, String socialNumber, String contractType, double salary)
     {
-        super(firstName, lastName, socialNumber, contractType)
-        {
-            this.salary = salary;
-        }
+        super(firstName, lastName, socialNumber, contractType);
+        this.salary = salary;
     }
 
     @Override
