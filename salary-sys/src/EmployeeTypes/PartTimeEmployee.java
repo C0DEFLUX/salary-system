@@ -11,13 +11,13 @@ public class PartTimeEmployee extends Employee
          this.hourlyRate = HourlyRate;
          this.hoursWorked = hoursWorked;
     }
-
+    //Override the income with this employee types salary
     @Override
     public double income()
     {
         return hourlyRate * hoursWorked;
     }
-
+    //Override the salary output for this employee type
     @Override
     public String toString()
     {

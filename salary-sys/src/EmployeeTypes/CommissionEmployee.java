@@ -11,13 +11,13 @@ public class CommissionEmployee extends Employee
         this.commissionRate = commissionRate;
         this.sales = sales;
     }
-
+    //Override the income with this employee types salary
     @Override
     public double income()
     {
         return commissionRate * sales;
     }
-
+    //Override the salary output for this employee type
     @Override
     public String toString()
     {
