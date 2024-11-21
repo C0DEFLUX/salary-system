@@ -4,14 +4,14 @@ public abstract class Employee
 {
     private String firstName;
     private String lastName;
-    private String socailNumber;
+    private String socialNumber;
     private String contractType;
 
-    public Employee(String firstName, String lastName, String socailNumber, String contractType)
+    public Employee(String firstName, String lastName, String socialNumber, String contractType)
     {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.socailNumber = socailNumber;
+        this.socialNumber = socialNumber;
         this.contractType = contractType;
     }
 
@@ -20,6 +20,6 @@ public abstract class Employee
     @Override
     public String toString()
     {
-        return "EmployeeTypes.Employee: "+ firstName + " " + lastName + ", Social Number: " + socailNumber + ", Contract Type: " + contractType;
+        return "EmployeeTypes.Employee: "+ firstName + " " + lastName + ", Social Number: " + socialNumber + ", Contract Type: " + contractType;
     }
 }
